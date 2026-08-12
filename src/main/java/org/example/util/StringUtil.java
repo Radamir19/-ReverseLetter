@@ -1,20 +1,20 @@
-package org.example;
+package org.example.util;
 
 public class StringUtil {
-    public static void reverseString(String str){
+    public static void reverseString(String str) {
         char[] charactersOfReversedString = str.toCharArray();
         int left = 0;
         int right = str.length() - 1;
-        while(left < right){
-            if(Character.isLetter(charactersOfReversedString[right]) && Character.isLetter(charactersOfReversedString[left])){
+        while (left < right) {
+            if (Character.isLetter(charactersOfReversedString[right]) && Character.isLetter(charactersOfReversedString[left])) {
                 char temp = charactersOfReversedString[left];
                 charactersOfReversedString[left] = charactersOfReversedString[right];
                 charactersOfReversedString[right] = temp;
                 left++;
                 right--;
-            }else if(!Character.isLetter(charactersOfReversedString[left])){
+            } else if (!Character.isLetter(charactersOfReversedString[left])) {
                 left++;
-            }else{
+            } else {
                 right--;
             }
         }
