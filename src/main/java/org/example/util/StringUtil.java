@@ -1,7 +1,10 @@
 package org.example.util;
 
 public class StringUtil {
-    public static void reverseString(String str) {
+    public static String reverseString(String str) {
+        if (str == null) {
+            return null;
+        }
         char[] charactersOfReversedString = str.toCharArray();
         int left = 0;
         int right = str.length() - 1;
@@ -20,5 +23,6 @@ public class StringUtil {
         }
         String result = new String(charactersOfReversedString);
         System.out.println(result);
+        return result;
     }
 }
