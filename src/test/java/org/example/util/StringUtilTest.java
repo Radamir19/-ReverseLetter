@@ -1,6 +1,5 @@
-package util;
+package org.example.util;
 
-import org.example.util.StringUtil;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
